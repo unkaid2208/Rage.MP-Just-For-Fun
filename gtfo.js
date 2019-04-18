@@ -1,6 +1,7 @@
 // 1. Put it here: server-files\packages\YOUR_PACKAGE
 // 2. Add require('./gtfo'); to your index.js
 // 2.1. Change this line "player.isLoggedIn && player.admin > 0" to your own if the admin check is different.
+// Usage: /gtfo [ID] to turn someone unwanted into the random animal on the list below.
 
 var animalList = [
       	"a_c_husky",
