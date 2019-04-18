@@ -22,16 +22,16 @@ var animalList = [
   ];
 
 mp.events.addCommand('gtfo', (player, _, playerID) => {
-  if (player.isLoggedIn && player.admin > 0) {
-	    const randomAnimal = Math.floor(Math.random() * animalList.length);
-	    if (player.isLoggedIn && player.admin > 0) {
-          if (playerID && playerID.trim().length > 0) {
-              let sourcePlayer = mp.players.at(parseInt(playerID));
-			        if (sourcePlayer) {
-	     			      player.removeAllWeapons();
-	     			      player.model = animalList[randomAnimal];
-	  		      }
-      	  }
-  	  }
-  }
+	if (player.isLoggedIn && player.admin > 0) {
+		const randomAnimal = Math.floor(Math.random() * animalList.length);
+		if (player.isLoggedIn && player.admin > 0) {
+			if (playerID && playerID.trim().length > 0) {
+				let sourcePlayer = mp.players.at(parseInt(playerID));
+				if (sourcePlayer) {
+					player.removeAllWeapons();
+					player.model = animalList[randomAnimal];
+				}
+			}
+		}
+	}
 });
