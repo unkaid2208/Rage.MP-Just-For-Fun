@@ -20,7 +20,7 @@ var animalList = [
 	"a_c_hen",
       	"a_c_rabbit_01",
       	"a_c_rat"
-  ];
+];
 
 mp.events.addCommand('gtfo', (player, _, playerID) => {
 	if (player.isLoggedIn && player.admin > 0) {
