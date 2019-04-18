@@ -11,12 +11,12 @@ var animalList = [
       	"a_c_shepherd",
       	"a_c_westy",
       	"a_c_mtlion",
-	      "a_c_cat_01",
+	"a_c_cat_01",
       	"a_c_boar",
-	      "a_c_pig",
+	"a_c_pig",
       	"a_c_cow",
       	"a_c_deer",
-	      "a_c_hen",
+	"a_c_hen",
       	"a_c_rabbit_01",
       	"a_c_rat"
   ];
