@@ -27,10 +27,10 @@ mp.events.addCommand('gtfo', (player, _, playerID) => {
 		const randomAnimal = Math.floor(Math.random() * animalList.length);
 		if (player.isLoggedIn && player.admin > 0) {
 			if (playerID && playerID.trim().length > 0) {
-				let sourcePlayer = mp.players.at(parseInt(playerID));
-				if (sourcePlayer) {
-					player.removeAllWeapons();
-					player.model = animalList[randomAnimal];
+				let animalPlayer = mp.players.at(parseInt(playerID));
+				if (animalPlayer) {
+					animalPlayer.removeAllWeapons();
+					animalPlayer.model = animalList[randomAnimal];
 				}
 			}
 		}
